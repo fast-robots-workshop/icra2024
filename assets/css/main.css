@@ -4012,9 +4012,18 @@ color: #55558f;
 .overlay-title {
     position: absolute; /* Set the title's position to absolute */
     top: 10%;           /* Center the title vertically */
-    left: 5%;          /* Center the title horizontally */
+    left: 10%;          /* Center the title horizontally */
     transform: translate(-0%, -0%); /* Ensure the title remains centered */
     color: #fff;        /* Adjust the text color for visibility */
     z-index: 2;         /* Ensure the title stays on top */
     /* ... other styles, like text-shadow for better readability ... */
+}
+
+/* Media query for screens smaller than 768 pixels */
+@media only screen and (max-width: 768px) {
+    .overlay-title {
+        top: 5%; /* Adjust this value as needed for mobile alignment */
+        left: 4%; /* Adjust this value as needed for mobile alignment */
+        /* You can also adjust font-size here if necessary */
+    }
 }
